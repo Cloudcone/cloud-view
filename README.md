@@ -8,3 +8,10 @@ A free addon agent to all [Cloud](https://cloudcone.com/cloud-servers/) and [Ded
 * Load Average 
 
 and other performance related metrics to be graphed at CloudCone's [Client Area](https://app.cloudcone.com)
+
+### Remove Agent
+``````
+rm -rf /opt/cloudcone
+crontab -r -u ccagent
+userdel ccagent
+``````
